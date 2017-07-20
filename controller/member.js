@@ -32,7 +32,7 @@ module.exports= class member{
     var account=req.body.account;
     var pwd=req.body.pwd;
     var nickName=req.body.nickName;
-    var image=req.photo;
+    var image=req.file;
     var hostname=req.hostname;
     var result=checkValidInfo(account,pwd,image,hostname);
     if(result.indexOf('/pic/member/')!==-1){  //檢查欄位是否有誤
